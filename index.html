@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<title>My portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img class="title-logo img-circle" src="images/facesm.jpg" alt="Avatar">
+				</div>
+				<div class="col-md-8 text-right text-uppercase">
+					<h1 class = "title-super text-thin">Ekaterina Korneeva</h1>
+					<h4>Front-end developer</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr class="hr-thick">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive" src="images/birdslg.jpg" alt="Main banner">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class = "text-muted">Featured work</h2>
+				</div>
+			</div>
+			<div id="images" class="row text-center">
+				<div class="col-md-4">
+					<img class="img-responsive" src="images/img1.jpg" alt="Aquamarin" data-toggle="modal" data-target="#project1">
+					<h3 class="text-uppercase">Aquamarin</h3>
+					<p>https://github.com/udacity/Appify/</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive" src="images/img2.jpg" alt="Reflections" data-toggle="modal" data-target="#project2">
+					<h3 class="text-uppercase">Reflections</h3>
+					<p>https://github.com/udacity/Sunflower/</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive" src="images/img3.jpg" alt="Bokeh" data-toggle="modal" data-target="#project3">
+					<h3 class="text-uppercase">Bokeh</h3>
+					<p>https://github.com/udacity/Bokeh/</p>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="project1"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Project 1</h4>
+						</div>
+						<div class="modal-body">
+							<img class="modal-img img-responsive" src="images/img1-modal.jpg" alt="Project 1">
+							Project 1 description. Since there is a photo currently, no need for longer description.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="project2"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Project 2</h4>
+						</div>
+						<div class="modal-body">
+							<img class="modal-img img-responsive" src="images/img2-modal.jpg" alt="Project 2">
+							Project 2 description. Since there is a photo currently, no need for longer description.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="project3"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Project 3</h4>
+						</div>
+						<div class="modal-body">
+							<img class="modal-img img-responsive" src="images/img3-modal.jpg" alt="Project 3">
+							Actually, some real bokeh effect can be seen here :) Project 3 description. Since there is a photo currently, no need for longer description.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</body>
+</html>
