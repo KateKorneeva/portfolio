@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>My portfolio</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
+			<div class="row head">
 				<div class="col-md-4">
 					<img class="title-logo img-circle" src="images/facesm.jpg" alt="Avatar">
 				</div>
@@ -20,56 +20,96 @@
 					<h4>Front-end developer</h4>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row banner">
 				<div class="col-md-12">
-					<hr class="hr-thick">
+					<h1>Building creative and effective websites</h1>
+					<h3>Specialising in JavaScript, WordPress, responsive design, animation, and performance</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<picture>
-						<source media="(min-width: 36em)" srcset="images/birdslg.jpg 1024w, images/birdslg.jpg 640w, images/birdslg.jpg 320w" />
-						<source srcset="images/birdscrlg.jpg 2x, images/birdscrsm.jpg 1x" />
-						<img class="img-responsive" src="images/birdslg.jpg" alt="Main banner" />
-					</picture>
-				</div>
-			</div>
-			<div class="row">
+<!--            <div class="row">
 				<div class="col-md-12">
 					<h2 class = "text-muted">Featured work</h2>
 				</div>
-			</div>
-			<div id="images" class="row text-center">
-				<div class="col-xs-12 col-sm-4">
-					<img class="img-responsive" src="images/img1.jpg" alt="Aquamarin" data-toggle="modal" data-target="#project1">
-					<h3 class="text-uppercase">Aquamarin</h3>
-					<p>https://github.com/udacity/Appify/</p>
+			</div> -->
+			<div class="row text-center">
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<h4 class="text-uppercase img-header">Clone of arcade game Frogger</h4>
+					<figure class="preview">
+						<img class="img-responsive" src="images/project1.jpg" alt="Clone of arcade game Frogger">
+						<figcaption>
+							<p>
+								<a href="http://korneevaed.github.io/frogger-clone/" target="_blank"><img src="images/link.png"></a>
+								<a href="#" data-toggle="modal" data-target="#project1"><img src="images/view.png"></a>
+							</p>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="col-xs-12 col-sm-4">
-					<img class="img-responsive" src="images/img2.jpg" alt="Reflections" data-toggle="modal" data-target="#project2">
-					<h3 class="text-uppercase">Reflections</h3>
-					<p>https://github.com/udacity/Sunflower/</p>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<h4 class="text-uppercase img-header">Stereoskverna website</h4>
+					<figure class="preview">
+						<img class="img-responsive" src="images/project2.jpg" alt="Stereoskverna">
+						<figcaption>
+							<p>
+								<a href="http://stereoskverna.com" target="_blank"><img src="images/link.png"></a>
+								<a href="#" data-toggle="modal" data-target="#project2"><img src="images/view.png"></a>
+							</p>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="col-xs-12 col-sm-4">
-					<img class="img-responsive" src="images/img3.jpg" alt="Bokeh" data-toggle="modal" data-target="#project3">
-					<h3 class="text-uppercase">Bokeh</h3>
-					<p>https://github.com/udacity/Bokeh/</p>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<h4 class="text-uppercase img-header">Circle JS player with playlist</h4>
+					<figure class="preview">
+						<img class="img-responsive" src="images/project3.jpg" alt="Circle player" data-toggle="modal" data-target="#project3">
+						<figcaption>
+							<p>
+								<a href="http://korneevaed.github.io/radial_player/" target="_blank"><img src="images/link.png"></a>
+								<a href="#" data-toggle="modal" data-target="#project3"><img src="images/view.png"></a>
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<h4 class="text-uppercase img-header">Circle JS player with playlist</h4>
+					<figure class="preview">
+						<img class="img-responsive" src="images/project4.jpg" alt="Circle player" data-toggle="modal" data-target="#project3">
+						<figcaption>
+							<p>
+								<a href="http://korneevaed.github.io/quilt-recommend/" target="_blank"><img src="images/link.png"></a>
+								<a href="#" data-toggle="modal" data-target="#project4"><img src="images/view.png"></a>
+							</p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 
 			<!-- Modal -->
+
 			<div class="modal fade" id="project1"  tabindex="-1" role="dialog" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title">Project 1</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="text-uppercase modal-title">Clone of arcade game Frogger</h4>
 						</div>
 						<div class="modal-body">
-							<img class="modal-img img-responsive" src="images/img1-modal.jpg" alt="Project 1">
-							Project 1 description. Since there is a photo currently, no need for longer description.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<div id="carousel-p1" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="modal-img img-responsive" src="images/project1-1.jpg" alt="Frogger">
+									</div>
+									<div class="item">
+										<img class="modal-img img-responsive" src="images/project1-2.jpg" alt="Frogger">
+									</div>
+								</div>
+								<a class="left carousel-control" href="#carousel-p1" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#carousel-p1" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+							<p class = "modal-descr">Built with pseudo-classical OOJS pattern, as part of OOJS course at Udacity.</p>
+							<a href="http://korneevaed.github.io/frogger-clone/" target="_black">See project page</a>
 						</div>
 					</div>
 				</div>
@@ -78,14 +118,31 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title">Project 2</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="text-uppercase modal-title">Stereoskverna website</h4>
 						</div>
 						<div class="modal-body">
-							<img class="modal-img img-responsive" src="images/img2-modal.jpg" alt="Project 2">
-							Project 2 description. Since there is a photo currently, no need for longer description.
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<div id="carousel-p2" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="modal-img img-responsive" src="images/project2-1.jpg" alt="Stereoskverna">
+									</div>
+									<div class="item">
+										<img class="modal-img img-responsive" src="images/project2-2.jpg" alt="Stereoskverna">
+									</div>
+									<div class="item">
+										<img class="modal-img img-responsive" src="images/project2-3.jpg" alt="Stereoskverna">
+									</div>
+								</div>
+								<a class="left carousel-control" href="#carousel-p2" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#carousel-p2" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+							<p class = "modal-descr">Website for Industrial music project Stereoskverna.</p>
+							<a href="http://stereoskverna.com" target="_black">See project page</a>
 						</div>
 					</div>
 				</div>
@@ -94,19 +151,51 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title">Project 3</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="text-uppercase modal-title">Circle JS player with playlist</h4>
 						</div>
 						<div class="modal-body">
-							<img class="modal-img img-responsive" src="images/img3-modal.jpg" alt="Project 3">
-							Actually, some real bokeh effect can be seen here :) Project 3 description. Since there is a photo currently, no need for longer description.
+							<div id="carousel-p3" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="modal-img img-responsive" src="images/project3-1.jpg" alt="Circle player">
+									</div>
+								</div>
+							</div>
+							<p class = "modal-descr">Combination of radial progress feature and HTML5 audio player.</p>
+							<p class = "modal-descr"> I've done this project because most of radial players I could find were not adapted for playlists. Maybe someday I will develop it into reusable plugin.</p>
+							<a href="http://korneevaed.github.io/radial_player/" target="_black">See project page</a>
 						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="project4"  tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="text-uppercase modal-title">Project 4</h4>
+						</div>
+						<div class="modal-body">
+							<div id="carousel-p4" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="modal-img img-responsive" src="images/project4m.jpg" alt="Project 4">
+									</div>
+								</div>
+							</div>
+							<p class = "modal-descr">Currently in progress. Built for quilt shop www.quiltlada.com/.
+							This is a questionnaire that is aimed to help customers decide on the type of pattern they want for ordered quilt.</p>
+							<a href="http://korneevaed.github.io/quilt-recommend/" target="_black">See project page</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<footer class="footer">
+			<div class="container"></div>
+		</footer>
+
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	</body>

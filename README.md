@@ -1,4 +1,5 @@
-mockup_to_website
+Portfolio
 =================
 
-The project is done for Udacity Front-End Developer Nanodegree course.
+This single page portfolio is built using Twitter Bootsrap.
+It represents some of my projects.
